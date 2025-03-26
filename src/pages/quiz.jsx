@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const quizData = [
-  { question: "Where did Bhuphesh and Gobica first meet?", options: ["College", "Cafe", "Park", "Online"], answer: "College" },
-  { question: "What is Gobica’s favorite color?", options: ["Pink", "Blue", "Red", "Green"], answer: "Pink" },
-  { question: "Which pet does Gobica love the most?", options: ["Dog", "Cat", "Rabbit", "Bird"], answer: "Cat" },
+  { question: "Where did Bhuphesh and Gobiga first meet?", options: ["College", "Cafe", "Park", "Online"], answer: "College" },
+  { question: "What is Gobiga’s favorite color?", options: ["Pink", "Blue", "Red", "Green"], answer: "Pink" },
+  { question: "Which pet does Gobiga love the most?", options: ["Dog", "Cat", "Rabbit", "Bird"], answer: "Cat" },
 ];
 
 const GameQuiz = () => {

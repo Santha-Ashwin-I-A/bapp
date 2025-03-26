@@ -27,7 +27,7 @@ const FinalMessage = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-4xl font-extrabold text-white drop-shadow-lg mb-4"
       >
-        💖 Surprise for You, Gobica! 💖
+        💖 Surprise for You, Gobiga! 💖
       </motion.h1>
 
       {/* Love Message */}

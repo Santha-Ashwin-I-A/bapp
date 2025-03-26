@@ -27,7 +27,7 @@ const SpecialSurprise = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        🎉 Your Special Surprise, Gobica! 🎉
+        🎉 Your Special Surprise, Gobiga! 🎉
       </motion.h1>
 
       {/* Video Surprise Animation */}

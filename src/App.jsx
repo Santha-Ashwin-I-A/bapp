@@ -28,7 +28,7 @@ const HomePage = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-4xl font-extrabold text-white drop-shadow-lg mb-4"
       >
-        Happy Birthday, Gobica! 🎉
+        Happy Birthday, Gobiga! 🎉
       </motion.h1>
 
       <motion.p
