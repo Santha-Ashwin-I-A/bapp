@@ -37,7 +37,7 @@ const SurpriseMessage = () => {
           className="mt-6 p-6 bg-white rounded-lg shadow-xl max-w-md"
         >
           <p className="text-lg font-semibold text-gray-800">
-            Dear <span className="text-pink-600">Gobica</span>,  
+            Dear <span className="text-pink-600">Gobiga</span>,  
           </p>
           <p className="mt-2 text-gray-700">
             You are the most special person in my life. Every moment with you is a treasure!  
