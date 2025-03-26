@@ -15,32 +15,60 @@ export default function MemoryLane() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
+    fade: true,
   };
 
   return (
-    <div className="min-h-screen bg-pink-200 flex flex-col items-center justify-center p-4">
+    <div className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-200 to-pink-400 text-center p-6 overflow-hidden">
+      
+      {/* Glow Effect */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.3)_10%,transparent_50%)] pointer-events-none animate-pulse"></div>
+
+      {/* Title Animation */}
       <motion.h1
-        className="text-3xl font-bold text-pink-800 mb-4"
-        initial={{ opacity: 0, y: -20 }}
+        className="text-4xl font-extrabold text-white drop-shadow-lg mb-6"
+        initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        Memory Lane
+        ✨ Memory Lane ✨
       </motion.h1>
-      <div className="w-full max-w-md">
+
+      {/* Slideshow Container */}
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="w-full max-w-lg bg-white rounded-xl shadow-xl p-4"
+      >
         <Slider {...settings}>
           {images.map((src, index) => (
-            <div key={index} className="flex justify-center">
-              <img src={src} alt={`Memory ${index + 1}`} className="rounded-xl shadow-lg w-full" />
-            </div>
+            <motion.div key={index} className="flex justify-center">
+              <motion.img
+                src={src}
+                alt={`Memory ${index + 1}`}
+                className="rounded-xl shadow-lg w-full"
+                whileHover={{ scale: 1.05 }}
+              />
+            </motion.div>
           ))}
         </Slider>
-      </div>
+      </motion.div>
+
+      {/* Text Overlay */}
+      <motion.p
+        className="text-lg text-white mt-6 italic"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+      >
+        “Every picture tells a story, every moment is a memory.” 📸💖
+      </motion.p>
     </div>
   );
 }
