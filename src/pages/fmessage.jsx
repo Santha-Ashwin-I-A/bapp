@@ -57,7 +57,7 @@ const FinalMessage = () => {
         onClick={() => navigate("/special-surprise")}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="mt-6 px-6 py-3 bg-white text-pink-500 font-semibold rounded-full shadow-md transition-all hover:bg-pink-500 hover:text-white text-lg"
+        className="bg-white text-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all"
       >
         🎁 See Your Special Surprise! 🎁
       </motion.button>

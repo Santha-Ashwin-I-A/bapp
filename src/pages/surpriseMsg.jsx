@@ -60,7 +60,7 @@ const SurpriseMessage = () => {
       <div className="mt-6 flex flex-col space-y-4">
         <motion.button
           onClick={() => navigate("/memory-lane")}
-          className="bg-pink-500 text-white px-6 py-2 rounded-lg shadow-md transition transform hover:scale-105"
+          className="bg-white text-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all"
           whileHover={{ scale: 1.1 }}
         >
           Go to Memory Lane 📸
@@ -68,7 +68,7 @@ const SurpriseMessage = () => {
 
         <Link to="/gift">
           <motion.button
-            className="bg-pink-500 text-white px-6 py-2 rounded-lg shadow-md"
+            className="bg-white text-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all"
             whileHover={{ scale: 1.1 }}
           >
             See gift 🎁

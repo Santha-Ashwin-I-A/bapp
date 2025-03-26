@@ -52,7 +52,7 @@ const GiftReveal = () => {
           transition={{ duration: 0.5 }}
           className="p-6 bg-white rounded-xl shadow-xl"
         >
-          <img src="/gift-revealed.png" alt="Gift Revealed" className="w-60 h-60" />
+          <img src="/bhu.jpg" alt="Gift Revealed" className="w-60 h-60" />
           <p className="text-lg text-pink-600 mt-4 font-medium">
             Surprise! 🎉 Bhuphesh has something special for you! 💖
           </p>
@@ -69,12 +69,12 @@ const GiftReveal = () => {
         >
           <button
             onClick={() => navigate("/memory-lane")}
-            className="px-6 py-3 bg-white text-pink-500 font-semibold rounded-full shadow-md transition-all hover:bg-pink-500 hover:text-white text-lg"
+            className="bg-white text-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all"
           >
             📸 Next: Memory Lane
           </button>
           <Link to="/quiz">
-            <button className="px-6 py-3 bg-white text-pink-500 font-semibold rounded-full shadow-md transition-all hover:bg-pink-500 hover:text-white text-lg">
+            <button className="bg-white text-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">
               🧠 Start Quiz
             </button>
           </Link>

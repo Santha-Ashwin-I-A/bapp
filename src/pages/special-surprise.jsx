@@ -38,8 +38,7 @@ const SpecialSurprise = () => {
         className="mt-6 w-full max-w-md rounded-lg shadow-xl overflow-hidden"
       >
         <video controls className="w-full rounded-lg">
-          <source src="/video/surprise.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          <img src="/bhu.jpg" alt="Gift Revealed" className="w-60 h-60" />
         </video>
         <p className="text-sm text-gray-100 mt-2">🎥 A special message from Bhuphesh 💖</p>
       </motion.div>
@@ -58,7 +57,7 @@ const SpecialSurprise = () => {
       {/* End Button with Hover Effect */}
       <motion.button
         onClick={() => navigate("/")}
-        className="mt-8 px-6 py-3 bg-pink-500 text-white rounded-full shadow-lg hover:bg-pink-600 transition transform hover:scale-105"
+        className="bg-white text-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all"
         whileHover={{ scale: 1.1 }}
       >
         🎊 The End 🎊

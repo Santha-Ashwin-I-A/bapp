@@ -68,7 +68,7 @@ const GameQuiz = () => {
                 <motion.button
                   key={index}
                   onClick={() => handleAnswer(option)}
-                  className="block w-full bg-pink-300 text-white rounded-lg py-3 my-2 shadow-md hover:bg-pink-400 transition transform hover:scale-105"
+                  className="bg-white text-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all"
                   whileTap={{ scale: 0.95 }}
                 >
                   {option}
@@ -92,7 +92,7 @@ const GameQuiz = () => {
 
             <motion.button
               onClick={() => navigate("/final-message")}
-              className="mt-6 px-6 py-3 bg-pink-500 text-white rounded-full shadow-lg hover:bg-pink-600 transition transform hover:scale-105"
+              className="bg-white text-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all"
               whileHover={{ scale: 1.1 }}
             >
               Next: Final Message 💌
