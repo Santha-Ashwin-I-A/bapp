@@ -37,9 +37,8 @@ const SpecialSurprise = () => {
         transition={{ duration: 0.8 }}
         className="mt-6 w-full max-w-md rounded-lg shadow-xl overflow-hidden"
       >
-        <video controls className="w-full rounded-lg">
+       
           <img src="/bhu.jpg" alt="Gift Revealed" className="w-60 h-60" />
-        </video>
         <p className="text-sm text-gray-100 mt-2">🎥 A special message from Bhuphesh 💖</p>
       </motion.div>
 
